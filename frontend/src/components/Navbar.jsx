@@ -15,8 +15,21 @@ const Navbar = () => {
 	return (
 		<header className='max-w-6xl mx-auto flex flex-wrap items-center justify-between p-4 h-20'>
 			<div className='flex items-center gap-10 z-50'>
-				<Link to='/'>
-					<img src='/netflix-logo.png' alt='Netflix Logo' className='w-32 sm:w-40' />
+				<Link to='/' className='select-none'>
+					<h1
+						className='font-extrabold text-3xl md:text-4xl tracking-tight leading-none'
+						style={{
+						color: '#C084FC', // Lavender tone
+						fontFamily:
+							"Poppins, 'Bebas Neue', 'Oswald', 'Segoe UI Black', 'Helvetica Neue', Arial, sans-serif",
+						letterSpacing: '-0.5px',
+						textShadow: '0 0 1px rgba(255,255,255,0.6), 0 0 8px rgba(192,132,252,0.3)',
+						WebkitFontSmoothing: 'antialiased',
+						MozOsxFontSmoothing: 'grayscale',
+						}}
+					>
+						STREAM <span className='text-white'>STROM</span>
+					</h1>
 				</Link>
 
 				{/* desktop navbar items */}
